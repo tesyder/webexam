@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+		<style type="text/css">
+			html,body{
+			width: 100%;
+			height: 100%;
+			overflow:hidden;
+		}
+		#main{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+		}
+		#bg{
+			z-index: -100;
+		}
+		#signin{
+			border: 2px;
+			width: 300px;
+			height:500px;
+			position: absolute;
+			top:10%;
+			left: 75%;
+			text-align: center;	
+			border-radius:2px ;
+			opacity: 1;
+			display: flex;
+		}
+		#biaodan{
+			position: absolute;
+			top: 30%;
+			left: 13%;
+			text-align: center;
+		}
+		
+		</style>
+	</head>
+	<body>
+		
+		<div id="signin" style="background-color: white;">
+			<div id="student" style="height: 50px;width: 50%;font-family: '微软雅黑';justify-content: center;top: 50%;">学生登录</div>
+			<div id="teacher" style="height: 50px;width: 50%;font-family: '微软雅黑';justify-content: center;background-color: whitesmoke;">教师登录</div>
+			
+			<form id="biaodan">
+				账号 ：<input id="name" type="text"><br/>
+				密码 ：<input id="password" type="password"><br/><br/><br/>
+				<input type="button" style="width: 100px;height: 20px;" value="登录"/>
+				
+			</form>
+			
+		</div>
+        <div id = "main">
+			<img id="bg" src="img/indexbg4.jpg" width="100%"/>
+		</div>
+	</body> 
+</html>
