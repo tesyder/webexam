@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{font-size: 26.667vw;}
+ul{
+	list-style: none;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	font-size: 0.12rem;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+   /*head部分*/
+header{
+	height: 0.84rem;
+	background: url(../img/bottom.png);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.2rem;
+}
+header span{
+	font-size: 20px;
+	color: #fff;
+}
+header button{
+	height: 0.36rem;
+	text-align: center;
+	padding: 0 0.2rem;
+	border: 0;
+	border-radius: 0.2rem;
+	line-height: 0.36rem;
+	color: #FF0000;
+	font-size: 0.16rem;
+}
+.main-menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 0.4rem;
+	border-bottom: 0.01rem solid gainsboro; 
+}
+.main-menu .active{
+	color: red;
+	border-bottom: 0.02rem solid red;
+}
+/*调整导航栏*/
+.main-menu li{
+	display: flex;
+	font-size: 0.16rem;
+	font-family: "黑体" ;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+/*宣传部份*/
+.hottop{
+	height: 1.45rem;
+	background: url(https://s3.music.126.net/mobile-new/img/hot_music_bg_3x.jpg?2bfefg3ba37eaffbd66b7d108b9de26a=) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction:column;
+	padding: 0.2rem 0.3rem;
+	color:white;
+	font-size: 0.12rem;
+	justify-content: space-around;
+}
+.picture{
+	width: 1.46rem;
+	height: 0.67rem;
+	background: url(https://s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880=) no-repeat;
+	background-size:1.66rem 0.97rem;
+	background-position:-0.2rem -0.3rem ;
+}
+.music-list li{
+	display: flex;
+	justify-content: space-between;
+	height: 1rem;
+	width: 100%;
+	align-items: center;
+	padding: 0 0.1rem;
+		border-bottom: 0.01rem solid grey;
+}
+.music-list li i{
+	
+	color: #808080;
+	font-size: 0.14rem;
+	width: 0.4rem;
+	
+}
+.music-list .icon{
+	width: 0.25rem;
+	height: 0.25rem;
+	display: inline-block;
+	background: url(https://s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880=) no-repeat;
+	background-size:1.66rem 0.97rem;
+	background-position: -0.23rem 0px;
+}
+.music-list li .song{
+	display: flex;
+	flex-direction:column;
+	flex-grow: 1;
+
+}
+.music-list li .song b{
+	font-size:0.14rem ;
+}
+.music-list li .song em{
+	margin:0.15rem 0 0 0.2rem ;
+	color: #ccc
+}
+.music-list li:nth-of-type(1) i{
+	color: red;
+}
+.music-list li:nth-of-type(2) i{
+	color: red;
+}
+.music-list li:nth-of-type(3) i{
+	color: red;
+}
+.top-bar{
+	height: 1.25rem;
+}
+.scroll{
+	flex-grow: 1;
+	height: auto;
+	overflow: auto;
+}

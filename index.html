@@ -1,69 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<style type="text/css">
-			a{
-				text-decoration: none;		
-			}
-			.a{
-				width: 350px;
-				height: 500px;
-				justify-content: center;
-				background-color: rgba(0,0,0,0.4);
-				display: flex;
-				align-items: center;
-				position: relative;
-				top: 50px;
-				font-style:24px ;
-			}
-			.b{
-				width: 300px;
-				height: 450px;
-				overflow: hidden;
-			}
-			.c{
-				font: 900 40px;
-				margin: 60px 0;
-				text-align: center;
-				letter-spacing: 5px;
-			}
-			.e{
-				width: 280px;
-				margin-bottom: 20px;
-				outline: none;
-				border: 0px;
-				padding:12px;
-				border-bottom: 2px solid rgba(247,0,247);
-				font: 900 16px;
-				
-			}
-			.f{
-				text-align: center;
-				height: 24px;
-				padding: 12px;
-				font: 900px 20px;
-				border-radius: 10px;
-				background-color: pink;				
-			}
-			.g{
-				margin: 33px;
-				font-size:14px ;
-			}
-		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>登录</title>
+ 		<link rel="stylesheet" href="css/loginstyle.css">
 	</head>
 	<body>
-		<div class = "a">
-			<div class="b">
-				<div class="c">登陆界面</div>
-				<input type="text" class="e" placeholder="请输入账号" />
-				<input type="password" class="e" placeholder="请输入密码" />
-				<div class="f">
-					<a href="#">登录</a>
-					<div class="g">欢迎来到这里了<a href="#">联系作者</a></div>
+		<div class="login">
+			<div class="head">
+				<div class="head1"></div>
+				<div class="headbg">
+					<img src="img/headbg1.png" id="img"/>
 				</div>
 			</div>
+			<div class="login-form">
+				<form>
+					<input id="name" type="text" placeholder="请输入用户名"/>
+					<input id="password" type="password" placeholder="请输入密码"/>
+				</form>
+				<div class="botton">
+					<div id="bot">
+						<a href="daohang.html">登录</a>
+					</div>
+				</div>
+				<div class="forget"> 
+					<div id="fg-pswd">忘记密码</div>
+					<span>丨</span>
+					<div id="login-on">账号注册</div>
+				</div>
+			</div>
+			<div class="di"></div>
 		</div>
+		<script>
+			var id = document.getElementById("name")
+			var pwd = document.getElementById("password")
+			
+			id.onclick = function(){
+				document.getElementById("img").src = "img/headbg1.png";
+			}
+			pwd.onclick = function(){
+				document.getElementById("img").src = "img/headbg2.png";
+			}
+		</script>
 	</body>
 </html>

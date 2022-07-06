@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.login{
+	height: 100vh;
+	display: flex;
+	flex-direction:column ;
+	justify-content: space-between;
+}
+.login-form{
+	display: flex;
+	flex-direction:column;
+}
+.login .head .head1{
+	height: 0.2rem;
+	background: url(../img/bottom.png);
+	padding: 0;
+	margin: 0;
+}
+.login .head .headbg{
+	padding: 0;
+	margin: 0;
+	height: 1.96rem;
+	width: 3.75rem;
+}
+
+.login-form{
+	flex-grow: 1;
+}
+
+.login form{
+	margin: 60px 0 0 0;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login form #name{
+	padding: 0.15rem;
+	height: 0.4rem;
+	width: 2.5rem;
+	border-radius: 0.2rem;
+	border: 0.01rem solid black;
+	font-size: 0.16rem;
+}
+
+.login form #password{
+	padding: 0.15rem;
+	margin: 0.15rem 0 0 0;
+	height: 0.4rem;
+	width: 2.5rem;
+	border-radius: 0.2rem;
+	border:0.01rem solid black;
+	font-size: 0.18rem;
+}
+.login .botton{
+	margin: 0.3rem 0 0 0;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.login .botton #bot{
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../img/circle.png) no-repeat;
+	background-size:cover ;
+	display: block;
+}
+.login .login-form .forget{
+	line-height: 0.1rem;
+	font-size: ;
+	margin: 1rem 0 0 0 ;
+	display: flex;
+	justify-content: center;
+}
+.login .login-form .forget span{
+	height: 0.1rem;
+}
+.login .login-form #fg-pswd{
+	font-size: 0.14rem;
+}
+#login-on{
+	font-size: 0.14rem;
+}
+
+.login .di{
+	height: 0.2rem;
+	background: url(../img/bottom.png);
+}
