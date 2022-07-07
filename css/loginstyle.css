@@ -76,6 +76,11 @@ body{
 	background: url(../img/circle.png) no-repeat;
 	background-size:cover ;
 	display: block;
+
+}
+.login .botton #bot a{
+	text-decoration: none;
+	color:white;
 }
 .login .login-form .forget{
 	line-height: 10px;
